@@ -51,10 +51,10 @@ function addPlant() {
     var pnt_nem = $('#pnt_nem').val();
     var wtrd_dt = $('#wtrd_dt').val();
     
-    var div = document.createElement("div");
+    // var div = document.createElement("div");
     
     var h2 = document.createElement("h2");
-    var h2_text = document.createTextNode('test heading');   //text entered from object list 
+    var h2_text = document.createTextNode('pnt_nem');   //text entered from object list 
     h2.appendChild(h2_text);
     
     var para_m1 = document.createElement('p');
@@ -63,17 +63,24 @@ function addPlant() {
     
     
     var para = document.createElement('p');
-    var para_text = document.createTextNode('test date')  // date entered from object list
+    var para_text = document.createTextNode(wtrd_dt)  // date entered from object list
     para.appendChild(para_text);
     
     
-    document.getElementById("plant_div").appendChild(node);
+    document.getElementById("plant_div").appendChild(h2);
+    document.getElementById("plant_div").appendChild(para_m1);
+    document.getElementById("plant_div").appendChild(para);
+    
+    localStorage.setItem(para_text, );
+    
 }
 
 
-var x = document.createElement("P");                        // Create a <p> node
-var t = document.createTextNode("This is a paragraph.");    // Create a text node
-x.appendChild(t);                                           // Append the text to <p>
-document.body.appendChild(h2);
-document.body.appendChild(para_m1);
-document.body.appendChild(para);
+// var x = document.createElement("P");                        // Create a <p> node
+// var t = document.createTextNode("This is a paragraph.");    // Create a text node
+// x.appendChild(t);                                           // Append the text to <p>
+// document.body.appendChild(h2);
+// document.body.appendChild(para_m1);
+// document.body.appendChild(para);
+
+
