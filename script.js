@@ -71,7 +71,7 @@ function addPlant() {
     document.getElementById("plant_div").appendChild(para_m1);
     document.getElementById("plant_div").appendChild(para);
     
-    localStorage.setItem(para_text, );
+    // localStorage.setItem(para_text, );
     
 }
 
@@ -84,3 +84,4 @@ function addPlant() {
 // document.body.appendChild(para);
 
 
+// $('#plant_div').odd(background-)
